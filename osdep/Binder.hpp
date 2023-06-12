@@ -350,8 +350,8 @@ class Binder {
 								// if this is a temporary IPv6 address, skip to the next address
 								if (flags & IN6_IFF_TEMPORARY) {
 #ifdef ZT_TRACE
-									char buf[64];
-									fprintf(stderr, "skip binding to temporary IPv6 address: %s\n", ip.toIpString(buf));
+									// char buf[64];
+									// fprintf(stderr, "skip binding to temporary IPv6 address: %s\n", ip.toIpString(buf));
 #endif
 									ifa = ifa->ifa_next;
 									continue;
